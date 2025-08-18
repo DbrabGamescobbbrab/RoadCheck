@@ -1,0 +1,94 @@
+app_name = "Rastreador de pedágios";
+tab_today = "Hoje";
+tab_trips = "Viagens";
+tab_directory = "Diretório";
+tab_reports = "Relatórios";
+tab_settings = "Ajustes";
+
+today_title = "Bem-vindo de volta!";
+today_add_entry = "Adicionar pedágio";
+today_road = "Rodovia";
+today_vehicle_category = "Categoria do veículo";
+today_vehicle_category_ph = "ex.: A / B / C";
+today_quantity = "Quantidade: %@";
+today_added = "Adicionado: %@ × %@ %@";
+today_total_title = "Total de hoje";
+today_total_note = "%@ (sem conversão)";
+empty_add_road = "Adicione uma rodovia em Diretório → Rodovias";
+
+today_title = "Autoestradas";
+
+trip_new_title = "Nova viagem";
+trip_date = "Data";
+trip_tag = "Tag/Projeto (opcional)";
+trip_create = "Criar";
+trip_cancel = "Cancelar";
+trip_detail_title = "Viagem";
+trip_add_section = "Adicionar lançamento";
+trip_road = "Rodovia";
+trip_category = "Categoria";
+trip_qty = "Qtd.: %@";
+trip_note = "Observação";
+trip_add = "Adicionar";
+trip_entries = "Lançamentos";
+
+dir_title = "Diretório";
+dir_roads = "Rodovias e tarifas";
+dir_vehicles = "Veículos";
+dir_templates = "Modelos de viagem";
+
+road_title = "Rodovia";
+road_info = "Informações";
+road_name = "Nome";
+road_section = "Trecho";
+road_direction = "Sentido";
+road_currency = "Moeda";
+road_tariffs = "Tarifas";
+road_cat = "Cat.";
+road_amount = "Valor";
+road_add = "Adicionar";
+
+veh_new = "Novo veículo";
+veh_name = "Título / Nome";
+veh_plate = "Placa";
+veh_category = "Categoria";
+veh_default = "Padrão";
+veh_create = "Criar";
+
+reports_title = "Relatórios";
+reports_total = "Despesas totais: %@";
+reports_count = "Lançamentos: %@";
+reports_by_road = "Por rodovia";
+
+settings_title = "Ajustes";
+settings_currency = "Moeda base";
+currency_ph = "USD, EUR…";
+settings_monthly_limit = "Limite mensal (0 = nenhum)";
+settings_about = "Sobre";
+settings_about_text = "Rastreador de pedágios. Dados no dispositivo. Sem mapas ou localização.";
+settings_theme = "Aparência";
+settings_theme_system = "Sistema";
+settings_theme_light = "Claro";
+settings_theme_dark = "Escuro";
+settings_privacy = "Política de privacidade";
+settings_language = "Idioma";
+lang_en = "English";
+lang_fr = "Français";
+lang_es = "Español";
+lang_it = "Italiano";
+lang_pt = "Português";
+reset_all = "Redefinir tudo";
+keyboard_done = "Concluído";
+
+onb_title_1 = "Registre pedágios em segundos";
+onb_sub_1 = "Salve rodovias e tarifas uma vez. Adicione cada passagem com um toque.";
+onb_title_2 = "Viagens e relatórios";
+onb_sub_2 = "Agrupe por viagem. Exporte CSV e controle custos.";
+onb_title_3 = "Sem mapas. Dados locais";
+onb_sub_3 = "Funciona offline. Vários veículos e moedas.";
+onb_continue = "Continuar";
+onb_get_started = "Começar";
+
+empty_trips = "Ainda não há viagens.\nToque em + para adicionar.";
+empty_roads = "Ainda não há rodovias.\nToque em + para adicionar.";
+empty_vehicles = "Ainda não há veículos.\nToque em + para adicionar.";

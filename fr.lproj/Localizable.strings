@@ -1,0 +1,94 @@
+app_name = "Suivi des péages";
+tab_today = "Aujourd’hui";
+tab_trips = "Trajets";
+tab_directory = "Référentiel";
+tab_reports = "Rapports";
+tab_settings = "Réglages";
+
+today_title = "Autoroutes";
+
+today_add_entry = "Ajouter un péage";
+today_road = "Route";
+today_vehicle_category = "Catégorie véhicule";
+today_vehicle_category_ph = "ex. A / B / C";
+today_quantity = "Quantité : %@";
+today_added = "Ajouté : %@ × %@ %@";
+today_total_title = "Total du jour";
+today_total_note = "%@ (sans conversion)";
+empty_add_road = "Ajoutez une route via Référentiel → Routes";
+
+trips_title = "Trajets";
+trip_new_title = "Nouveau trajet";
+trip_date = "Date";
+trip_tag = "Tag/Projet (optionnel)";
+trip_create = "Créer";
+trip_cancel = "Annuler";
+trip_detail_title = "Trajet";
+trip_add_section = "Ajouter une entrée";
+trip_road = "Route";
+trip_category = "Catégorie";
+trip_qty = "Qté : %@";
+trip_note = "Note";
+trip_add = "Ajouter";
+trip_entries = "Entrées";
+
+dir_title = "Référentiel";
+dir_roads = "Routes & Tarifs";
+dir_vehicles = "Véhicules";
+dir_templates = "Modèles de trajets";
+
+road_title = "Route";
+road_info = "Infos";
+road_name = "Nom";
+road_section = "Section";
+road_direction = "Direction";
+road_currency = "Devise";
+road_tariffs = "Tarifs";
+road_cat = "Cat.";
+road_amount = "Montant";
+road_add = "Ajouter";
+
+veh_new = "Nouveau véhicule";
+veh_name = "Titre / Nom";
+veh_plate = "Immatriculation";
+veh_category = "Catégorie";
+veh_default = "Par défaut";
+veh_create = "Créer";
+
+reports_title = "Rapports";
+reports_total = "Dépenses totales : %@";
+reports_count = "Entrées : %@";
+reports_by_road = "Par route";
+
+settings_title = "Réglages";
+settings_currency = "Devise principale";
+currency_ph = "USD, EUR…";
+settings_monthly_limit = "Plafond mensuel (0 = aucun)";
+settings_about = "À propos";
+settings_about_text = "Suivi des péages. Données sur l’appareil. Sans cartes ni localisation.";
+settings_theme = "Apparence";
+settings_theme_system = "Système";
+settings_theme_light = "Clair";
+settings_theme_dark = "Sombre";
+settings_privacy = "Politique de confidentialité";
+settings_language = "Langue";
+lang_en = "English";
+lang_fr = "Français";
+lang_es = "Español";
+lang_it = "Italiano";
+lang_pt = "Português";
+reset_all = "Tout réinitialiser";
+keyboard_done = "Terminé";
+
+onb_title_1 = "Suivez les péages en secondes";
+onb_sub_1 = "Enregistrez routes et tarifs une fois. Ajoutez chaque passage d’un tap.";
+onb_title_2 = "Trajets & Rapports";
+onb_sub_2 = "Regroupez par trajets. Export CSV et contrôle des coûts.";
+onb_title_3 = "Sans cartes. Données locales";
+onb_sub_3 = "Hors ligne. Multi-véhicules et devises.";
+onb_continue = "Continuer";
+onb_get_started = "Commencer";
+
+empty_trips = "Aucun trajet pour l’instant.\nTouchez + pour en ajouter un.";
+empty_roads = "Aucune route pour l’instant.\nTouchez + pour en ajouter une.";
+empty_vehicles = "Aucun véhicule pour l’instant.\nTouchez + pour en ajouter un.";

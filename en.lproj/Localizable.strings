@@ -1,0 +1,94 @@
+app_name = "Toll Tracker";
+tab_today = "Today";
+tab_trips = "Trips";
+tab_directory = "Directory";
+tab_reports = "Reports";
+tab_settings = "Settings";
+
+today_title = "Highway Roads";
+
+today_add_entry = "Add Toll";
+today_road = "Road";
+today_vehicle_category = "Vehicle category";
+today_vehicle_category_ph = "e.g. A / B / C";
+today_quantity = "Quantity: %@";
+today_added = "Added: %@ × %@ %@";
+today_total_title = "Today total";
+today_total_note = "%@ (no conversion)";
+empty_add_road = "Add a road via Directory → Roads";
+
+trips_title = "Trips";
+trip_new_title = "New Trip";
+trip_date = "Date";
+trip_tag = "Tag/Project (optional)";
+trip_create = "Create";
+trip_cancel = "Cancel";
+trip_detail_title = "Trip";
+trip_add_section = "Add entry";
+trip_road = "Road";
+trip_category = "Category";
+trip_qty = "Qty: %@";
+trip_note = "Note";
+trip_add = "Add";
+trip_entries = "Entries";
+
+dir_title = "Directory";
+dir_roads = "Roads & Tariffs";
+dir_vehicles = "Vehicles";
+dir_templates = "Trip Templates";
+
+road_title = "Road";
+road_info = "Info";
+road_name = "Name";
+road_section = "Section";
+road_direction = "Direction";
+road_currency = "Currency";
+road_tariffs = "Tariffs";
+road_cat = "Cat.";
+road_amount = "Amount";
+road_add = "Add";
+
+veh_new = "New Vehicle";
+veh_name = "Title / Name";
+veh_plate = "Plate";
+veh_category = "Category";
+veh_default = "Default";
+veh_create = "Create";
+
+reports_title = "Reports";
+reports_total = "Total expenses: %@";
+reports_count = "Entries: %@";
+reports_by_road = "By road";
+
+settings_title = "Settings";
+settings_currency = "Home currency";
+currency_ph = "USD, EUR…";
+settings_monthly_limit = "Monthly limit (0 = none)";
+settings_about = "About";
+settings_about_text = "Toll expense tracker. Data stays on device. No maps, no location.";
+settings_theme = "Appearance";
+settings_theme_system = "System";
+settings_theme_light = "Light";
+settings_theme_dark = "Dark";
+settings_privacy = "Privacy Policy";
+settings_language = "Language";
+lang_en = "English";
+lang_fr = "Français";
+lang_es = "Español";
+lang_it = "Italiano";
+lang_pt = "Português";
+reset_all = "Reset All";
+keyboard_done = "Done";
+
+onb_title_1 = "Track tolls in seconds";
+onb_sub_1 = "Save roads and tariffs once. Log each pass with one tap.";
+onb_title_2 = "Trips & Reports";
+onb_sub_2 = "Group entries into trips. Export CSV and keep costs under control.";
+onb_title_3 = "No maps. Your data stays local";
+onb_sub_3 = "Works offline. Supports multiple vehicles and currencies.";
+onb_continue = "Continue";
+onb_get_started = "Get started";
+
+empty_trips = "No trips yet.\nTap + to add a trip.";
+empty_roads = "No roads yet.\nTap + to add a road.";
+empty_vehicles = "No vehicles yet.\nTap + to add a vehicle.";

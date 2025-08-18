@@ -1,0 +1,94 @@
+app_name = "Tracker pedaggi";
+tab_today = "Oggi";
+tab_trips = "Viaggi";
+tab_directory = "Archivio";
+tab_reports = "Report";
+tab_settings = "Impostazioni";
+
+today_title = "Autostrade";
+
+today_add_entry = "Aggiungi pedaggio";
+today_road = "Strada";
+today_vehicle_category = "Categoria veicolo";
+today_vehicle_category_ph = "es. A / B / C";
+today_quantity = "Quantità: %@";
+today_added = "Aggiunto: %@ × %@ %@";
+today_total_title = "Totale di oggi";
+today_total_note = "%@ (senza conversione)";
+empty_add_road = "Aggiungi una strada in Archivio → Strade";
+
+trips_title = "Viaggi";
+trip_new_title = "Nuovo viaggio";
+trip_date = "Data";
+trip_tag = "Tag/Progetto (opzionale)";
+trip_create = "Crea";
+trip_cancel = "Annulla";
+trip_detail_title = "Viaggio";
+trip_add_section = "Aggiungi voce";
+trip_road = "Strada";
+trip_category = "Categoria";
+trip_qty = "Qtà: %@";
+trip_note = "Nota";
+trip_add = "Aggiungi";
+trip_entries = "Voci";
+
+dir_title = "Archivio";
+dir_roads = "Strade e tariffe";
+dir_vehicles = "Veicoli";
+dir_templates = "Modelli di viaggio";
+
+road_title = "Strada";
+road_info = "Info";
+road_name = "Nome";
+road_section = "Tratto";
+road_direction = "Direzione";
+road_currency = "Valuta";
+road_tariffs = "Tariffe";
+road_cat = "Cat.";
+road_amount = "Importo";
+road_add = "Aggiungi";
+
+veh_new = "Nuovo veicolo";
+veh_name = "Titolo / Nome";
+veh_plate = "Targa";
+veh_category = "Categoria";
+veh_default = "Predefinito";
+veh_create = "Crea";
+
+reports_title = "Report";
+reports_total = "Spese totali: %@";
+reports_count = "Voci: %@";
+reports_by_road = "Per strada";
+
+settings_title = "Impostazioni";
+settings_currency = "Valuta principale";
+currency_ph = "USD, EUR…";
+settings_monthly_limit = "Limite mensile (0 = nessuno)";
+settings_about = "Info";
+settings_about_text = "Tracker pedaggi. Dati sul dispositivo. Senza mappe o localizzazione.";
+settings_theme = "Aspetto";
+settings_theme_system = "Sistema";
+settings_theme_light = "Chiaro";
+settings_theme_dark = "Scuro";
+settings_privacy = "Informativa sulla privacy";
+settings_language = "Lingua";
+lang_en = "English";
+lang_fr = "Français";
+lang_es = "Español";
+lang_it = "Italiano";
+lang_pt = "Português";
+reset_all = "Reimposta tutto";
+keyboard_done = "Fine";
+
+onb_title_1 = "Registra i pedaggi in pochi secondi";
+onb_sub_1 = "Salva strade e tariffe una volta. Aggiungi ogni passaggio con un tap.";
+onb_title_2 = "Viaggi e report";
+onb_sub_2 = "Raggruppa per viaggio. Esporta CSV e controlla i costi.";
+onb_title_3 = "Senza mappe. Dati locali";
+onb_sub_3 = "Funziona offline. Più veicoli e valute.";
+onb_continue = "Continua";
+onb_get_started = "Inizia";
+
+empty_trips = "Ancora nessun viaggio.\nTocca + per aggiungerne uno.";
+empty_roads = "Ancora nessuna strada.\nTocca + per aggiungerne una.";
+empty_vehicles = "Ancora nessun veicolo.\nTocca + per aggiungerne uno.";

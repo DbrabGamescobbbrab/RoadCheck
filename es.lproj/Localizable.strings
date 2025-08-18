@@ -1,0 +1,94 @@
+app_name = "Control de peajes";
+tab_today = "Hoy";
+tab_trips = "Viajes";
+tab_directory = "Directorio";
+tab_reports = "Informes";
+tab_settings = "Ajustes";
+
+today_title = "Autopistas";
+
+today_add_entry = "Añadir peaje";
+today_road = "Carretera";
+today_vehicle_category = "Categoría del vehículo";
+today_vehicle_category_ph = "p. ej. A / B / C";
+today_quantity = "Cantidad: %@";
+today_added = "Añadido: %@ × %@ %@";
+today_total_title = "Total de hoy";
+today_total_note = "%@ (sin conversión)";
+empty_add_road = "Añade una carretera en Directorio → Carreteras";
+
+trips_title = "Viajes";
+trip_new_title = "Nuevo viaje";
+trip_date = "Fecha";
+trip_tag = "Etiqueta/Proyecto (opcional)";
+trip_create = "Crear";
+trip_cancel = "Cancelar";
+trip_detail_title = "Viaje";
+trip_add_section = "Añadir entrada";
+trip_road = "Carretera";
+trip_category = "Categoría";
+trip_qty = "Cant.: %@";
+trip_note = "Nota";
+trip_add = "Añadir";
+trip_entries = "Entradas";
+
+dir_title = "Directorio";
+dir_roads = "Carreteras y tarifas";
+dir_vehicles = "Vehículos";
+dir_templates = "Plantillas de viaje";
+
+road_title = "Carretera";
+road_info = "Información";
+road_name = "Nombre";
+road_section = "Tramo";
+road_direction = "Dirección";
+road_currency = "Moneda";
+road_tariffs = "Tarifas";
+road_cat = "Cat.";
+road_amount = "Importe";
+road_add = "Añadir";
+
+veh_new = "Nuevo vehículo";
+veh_name = "Título / Nombre";
+veh_plate = "Matrícula";
+veh_category = "Categoría";
+veh_default = "Por defecto";
+veh_create = "Crear";
+
+reports_title = "Informes";
+reports_total = "Gasto total: %@";
+reports_count = "Entradas: %@";
+reports_by_road = "Por carretera";
+
+settings_title = "Ajustes";
+settings_currency = "Moneda base";
+currency_ph = "USD, EUR…";
+settings_monthly_limit = "Límite mensual (0 = ninguno)";
+settings_about = "Acerca de";
+settings_about_text = "Control de peajes. Datos en el dispositivo. Sin mapas ni ubicación.";
+settings_theme = "Apariencia";
+settings_theme_system = "Sistema";
+settings_theme_light = "Claro";
+settings_theme_dark = "Oscuro";
+settings_privacy = "Política de privacidad";
+settings_language = "Idioma";
+lang_en = "English";
+lang_fr = "Français";
+lang_es = "Español";
+lang_it = "Italiano";
+lang_pt = "Português";
+reset_all = "Restablecer todo";
+keyboard_done = "OK";
+
+onb_title_1 = "Registra peajes en segundos";
+onb_sub_1 = "Guarda carreteras y tarifas una vez. Añade cada paso con un toque.";
+onb_title_2 = "Viajes e informes";
+onb_sub_2 = "Agrupa por viaje. Exporta CSV y controla los gastos.";
+onb_title_3 = "Sin mapas. Datos locales";
+onb_sub_3 = "Funciona sin conexión. Varios vehículos y monedas.";
+onb_continue = "Continuar";
+onb_get_started = "Empezar";
+
+empty_trips = "Aún no hay viajes.\nToca + para añadir uno.";
+empty_roads = "Aún no hay carreteras.\nToca + para añadir una.";
+empty_vehicles = "Aún no hay vehículos.\nToca + para añadir uno.";
