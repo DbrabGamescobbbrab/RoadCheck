@@ -1,9 +1,4 @@
-//
-//  ContentView.swift
-//  RoadCheck
-//
-//  Created by Vikentii on 15/8/25.
-//
+
 
 import SwiftUI
 

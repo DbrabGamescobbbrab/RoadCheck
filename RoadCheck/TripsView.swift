@@ -72,7 +72,9 @@ struct TripDetailView: View {
                 }
                 .pickerStyle(.menu)
 
-                TextField(LocalizedStringKey("trip_category"), text: $category).textInputAutocapitalization(.characters)
+                TextField(LocalizedStringKey("trip_category"), text: $category)
+                    .textInputAutocapitalization(.characters)
+                    .categoryKeyboardToolbar(text: $category)
                 Stepper(String(format: String(localized: "trip_qty"), "\(qty)"), value: $qty, in: 1...50)
                 TextField(LocalizedStringKey("trip_note"), text: $note)
 
@@ -106,6 +108,7 @@ struct TripDetailView: View {
         let amount = tariff?.amount ?? 0
         let e = TollEntry(tripId: trip.id, roadId: road.id, vehicleCategory: category.uppercased(), quantity: qty, amount: amount, currency: road.currency, note: note.isEmpty ? nil : note)
         ctx.insert(e)
+        Haptics.success()
         qty = 1; note = ""
     }
 

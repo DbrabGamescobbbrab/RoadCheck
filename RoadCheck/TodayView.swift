@@ -43,6 +43,7 @@ struct TodayView: View {
                 .textInputAutocapitalization(.characters)
                 .autocorrectionDisabled()
                 .textFieldStyle(.roundedBorder)
+                .categoryKeyboardToolbar(text: $selectedVehicleCategory)
 
                 Stepper(
                     String(format: String(localized: "today_quantity"), "\(quantity)"),
@@ -73,7 +74,23 @@ struct TodayView: View {
             .padding()
             .navigationTitle(LocalizedStringKey("today_title")) // Welcome back!
             .onAppear {
-                if selectedRoad == nil { selectedRoad = roads.first }
+                // Prefer last used road from prefs; fallback to first available road
+                if let savedId = UserPrefs.readLastRoadId(),
+                   let match = roads.first(where: { $0.id == savedId }) {
+                    selectedRoad = match
+                } else if selectedRoad == nil {
+                    selectedRoad = roads.first
+                }
+                // Prefill last vehicle category if empty
+                if selectedVehicleCategory.isEmpty, let lastCat = UserPrefs.readLastVehicleCategory() {
+                    selectedVehicleCategory = lastCat
+                }
+            }
+            .onChange(of: selectedRoad) { newValue in
+                if let road = newValue { UserPrefs.saveLastRoadId(road.id) }
+            }
+            .onChange(of: selectedVehicleCategory) { newValue in
+                UserPrefs.saveLastVehicleCategory(newValue)
             }
         }
     }
@@ -100,6 +117,9 @@ struct TodayView: View {
             currency: road.currency
         )
         ctx.insert(entry)
+        Haptics.success()
+        UserPrefs.saveLastRoadId(road.id)
+        UserPrefs.saveLastVehicleCategory(cat.isEmpty ? "A" : cat)
 
         lastAddedMessage = String(
             format: String(localized: "today_added"),

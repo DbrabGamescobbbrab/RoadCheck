@@ -1,5 +1,6 @@
 import SwiftUI
 import SwiftData
+import WebKit
 
 struct SettingsView: View {
     @Environment(\.modelContext) private var ctx
@@ -13,8 +14,9 @@ struct SettingsView: View {
     // Focus для кнопки Done
     @FocusState private var currencyFocused: Bool
     @FocusState private var limitFocused: Bool
+    @State private var showPrivacy = false
 
-    private let privacyURL = URL(string: "https://www.freeprivacypolicy.com/live/5113cd18-070b-4a18-9c95-189580545a9d")!
+    private let privacyURL = URL(string: "https://www.termsfeed.com/live/590b332b-b6e8-48bf-aa59-018bf30d261f")!
 
     var body: some View {
         Form {
@@ -75,7 +77,7 @@ struct SettingsView: View {
                     .foregroundStyle(.secondary)
 
                 Button(LocalizedStringKey("settings_privacy")) {
-                    UIApplication.shared.open(privacyURL, options: [:], completionHandler: nil)
+                    showPrivacy = true
                 }
             }
 
@@ -89,6 +91,19 @@ struct SettingsView: View {
             }
         }
         .navigationTitle(LocalizedStringKey("settings_title"))
+        .sheet(isPresented: $showPrivacy) {
+            NavigationStack {
+                PrivacyWebView(url: privacyURL)
+                    .navigationTitle(LocalizedStringKey("settings_privacy"))
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Done") {
+                                showPrivacy = false
+                            }
+                        }
+                    }
+            }
+        }
     }
 
     private func resetAll() {
@@ -116,5 +131,33 @@ struct SettingsView: View {
         appAppearanceRaw = AppAppearance.system.rawValue
         appLanguage = "en"
         hasSeenOnboarding = false // показать онбординг снова
+    }
+}
+
+// MARK: - In-app Privacy WebView (WKWebView)
+struct PrivacyWebView: UIViewRepresentable {
+    let url: URL
+
+    func makeUIView(context: Context) -> WKWebView {
+        let webView = WKWebView(frame: .zero)
+        webView.allowsBackForwardNavigationGestures = true
+        webView.navigationDelegate = context.coordinator
+        webView.scrollView.keyboardDismissMode = .onDrag
+        let req = URLRequest(url: url)
+        webView.load(req)
+        return webView
+    }
+
+    func updateUIView(_ uiView: WKWebView, context: Context) {
+        // no-op
+    }
+
+    func makeCoordinator() -> Coordinator { Coordinator() }
+
+    final class Coordinator: NSObject, WKNavigationDelegate {
+        func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction,
+                     decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+            decisionHandler(.allow)
+        }
     }
 }
