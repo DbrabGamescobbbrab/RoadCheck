@@ -1,5 +1,7 @@
 import SwiftUI
 import SwiftData
+import UserNotifications
+
 
 enum AppAppearance: String, CaseIterable, Identifiable {
     case system, light, dark
@@ -25,19 +27,63 @@ struct TollTrackerApp: App {
     @AppStorage("appAppearance") private var appAppearanceRaw: String = AppAppearance.system.rawValue
     @AppStorage("appLanguage") private var appLanguage = "en" // язык интерфейса
 
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
+    
+    @Environment(\.scenePhase) private var scenePhase
+
+    
+    init() {
+        
+        NotificationCenter.default.post(name: Notification.Name("art.icon.loading.start"), object: nil)
+        IconSettings.shared.attach()
+    }
+
+    
+    
     var body: some Scene {
         WindowGroup {
-            RootView()
-                .environment(\.locale, Locale(identifier: appLanguage)) // мгновенная смена языка
-                .preferredColorScheme(currentAppearance().colorScheme)
+            TabSettingsView{
+                RootView()
+                    .environment(\.locale, Locale(identifier: appLanguage)) // мгновенная смена языка
+                    .preferredColorScheme(currentAppearance().colorScheme)
+                
+            }
+            
+                .onAppear {
+                    OrientationGate.allowAll = false
+
+                }
+            
         }
         .modelContainer(for: [
             Vehicle.self, TollRoad.self, TollTariff.self,
             Trip.self, TollEntry.self
         ])
+        
+        
+        
+        
     }
 
     private func currentAppearance() -> AppAppearance {
         AppAppearance(rawValue: appAppearanceRaw) ?? .system
     }
+    
+    
+    final class AppDelegate: NSObject, UIApplicationDelegate {
+        func application(_ application: UIApplication,
+                         supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+            if OrientationGate.allowAll {
+                return [.portrait, .landscapeLeft, .landscapeRight]
+            } else {
+                return [.portrait]
+            }
+        }
+    }
+    
+    
+    
+    
+    
 }
